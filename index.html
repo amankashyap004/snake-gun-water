@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Gun Water Game</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+
+  <body>
+    <main class="main-body">
+    <main class="main-container">
+      <!-- Main Heading -->
+      <div class="main-heading box-style">
+        <h1>Game of Snake Gun and Water</h1>
+      </div>
+      <!-- Sub Heading -->
+      <!-- <div class="sub-heading box-style">
+        <h3>Choose one of them</h3>
+      </div> -->
+      <!-- Snake Gun Water Section -->
+      <section class="box-container box-style">
+        <!-- Snake-->
+        <div class="box-contain snake-box" id="snake">
+          <h1 class="main-name">Snake</h1>
+        </div>
+        <!-- Gun -->
+        <div class="box-contain gun-box" id="gun">
+          <h1 class="main-name">Gun</h1>
+        </div>
+        <!-- Water  -->
+        <div class="box-contain water-box" id="water">
+          <h1 class="main-name">Water</h1>
+        </div>
+      </section>
+      <div class="show-container box-style">
+      <!-- Input Section  -->
+      <section class="input-box">
+        <!-- Input of User  -->
+        <div class="user-input input-box-contain">
+          <h3 class="sub-heading">
+            You :&nbsp;<span id="user-choice" class="choice"></span>
+          </h3>
+        </div>
+        <!-- Input of Computer  -->
+        <div class="computer-input input-box-contain">
+          <h3 class="sub-heading">
+            Computer :&nbsp;<span id="computer-choice" class="choice"></span>
+          </h3>
+        </div>
+      </section>
+      <!-- Winner Section -->
+      <section class="winner-box">
+        <div class="play-time">
+          <h3 class="sub-heading">
+            Play Times :&nbsp;<span id="play-time-output" class="choice">0</span>
+          </h3>
+        </div>
+        <!-- Winner -->
+        <div class="winner">
+          <h3 class="sub-heading">
+            Winner Is :&nbsp;<span id="winner-output" class="choice"></span>
+          </h3>
+        </div>
+      </section>
+      <!-- Score Section -->
+      <section class="score-box">
+        <!-- Score of User -->
+        <div class="your-score">
+          <h3 class="sub-heading">
+            Your Score :&nbsp;<span id="your-score-output" class="choice">0</span>
+          </h3>
+        </div>
+        <!-- Score of Computer -->
+        <div class="computer-score">
+          <h3 class="sub-heading">
+            Computer Score :&nbsp;<span id="computer-score-output" class="choice">0</span>
+          </h3>
+        </div>
+      </section>
+    </div>
+      <section class="reload-btn">
+        <button type="submit" class="btn" onclick="reloadBtn()">Start Game</button>
+      </section>
+    </main>
+  </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
