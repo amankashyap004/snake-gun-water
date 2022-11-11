@@ -4,4 +4,5 @@
 <br />
 It is a hand game in which the player randomly chooses any of the three forms i.e. snake, water, and gun.
 <br />
-If you want to play [Click Here.](https://amankashyap004.github.io/snake-gun-water/)
+<br />
+If you want to play [**Click Here.**](https://amankashyap004.github.io/snake-gun-water/)
