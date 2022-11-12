@@ -31,7 +31,7 @@ function mainFunction(userIn) {
 
   if (user === computer) {
     winner = "tied";
-    winnerDescription = "Tied: You and the Computer both choose the same, try again 😎";
+    winnerDescription = "Tied : You and the Computer both choose the same, try again 😎";
   }
   if (user === "S" && computer === "W") {
     yourScore++;
