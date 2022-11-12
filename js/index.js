@@ -74,13 +74,13 @@ function mainFunction(userIn) {
   let newBgColor = "";
   if (winner === "tied") {
     winnerResult = "No one";
-    newBgColor = "#38E54D";
+    newBgColor = "#82CD47";
   } else if (winner === "user") {
     winnerResult = "You";
-    newBgColor = "#7DE5ED";
+    newBgColor = "#BCEAD5";
   } else if (winner === "computer") {
     winnerResult = "Computer";
-    newBgColor = "#C93737";
+    newBgColor = "#FF87B2";
   }
 
   let winnerOutput = document.getElementById("winner-output");
@@ -89,15 +89,15 @@ function mainFunction(userIn) {
 
   let yourScoreOutput = document.getElementById("your-score-output");
   yourScoreOutput.innerText = yourScore;
-  yourScoreOutput.style.backgroundColor = "#FF5733";
+  yourScoreOutput.style.backgroundColor = "#FF731D";
 
   let computerScoreOutput = document.getElementById("computer-score-output");
   computerScoreOutput.innerText = computerScore;
-  computerScoreOutput.style.backgroundColor = "#6C4AB6";
+  computerScoreOutput.style.backgroundColor = "#FD841F";
 
   let playTimeOutput = document.getElementById("play-time-output");
   playTimeOutput.innerText = ++playTime;
-  playTimeOutput.style.backgroundColor = "#80489C";
+  playTimeOutput.style.backgroundColor = "#C539B4";
 
   let winnerDescriptionResult = document.getElementById("winner-description-result")
   winnerDescriptionResult.textContent = winnerDescription;

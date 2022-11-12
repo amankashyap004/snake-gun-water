@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 :root {
   --bg-light: #c4d8d2;
-  --bg-btn: rgb(223, 126, 41);
-  --bg-snake: rgb(243, 243, 126);
-  --bg-water: rgb(240, 144, 144);
-  --bg-gun: rgb(164, 237, 164);
+  --bg-btn: #0A1931;
+  --bg-snake: #FCFA70;
+  --bg-water: #7DE5ED;
+  --bg-gun: #FF4A4A;
   --text-black: black;
-  --text-heading: rgb(237, 99, 14);
-  --text-red: red;
-  --text-winner: rgb(0, 5, 69);
+  --text-heading: #EA047E;
+  --text-red: #D2001A;
+  --text-winner: #001253;
 }
 
 * {
@@ -21,8 +20,7 @@
 
 body {
   background-color: var(--bg-light);
-  font-family: "Playfair Display", Verdana, sans-serif;
-  font-family: "Lato", Verdana, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .btn {
@@ -30,6 +28,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-size: 1.1em;
+  color: white;
   border: 2px solid var(--text-red);
   border-radius: 50px;
   transition: all 0.3s ease;
@@ -75,7 +74,7 @@ body {
   text-align: center;
   padding: 0.8em;
   font-size: 1em;
-  text-shadow: 1px 1px 1px rgb(250, 181, 181);
+  text-shadow: 1px 1px 1px var(--text-heading);
 }
 
 .sub-heading {
