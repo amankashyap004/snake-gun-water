@@ -37,6 +37,7 @@ function water() {
   mainFunction(userIn);
 }
 
-function reloadBtn() {
+let reloadButton = document.getElementById("reload-button")
+reloadButton.addEventListener("click", ()=>{
   location.reload();
-}
+});

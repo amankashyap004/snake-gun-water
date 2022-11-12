@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 :root {
   --bg-light: #c4d8d2;
@@ -10,6 +10,7 @@
   --text-black: black;
   --text-heading: rgb(237, 99, 14);
   --text-red: red;
+  --text-winner: rgb(0, 5, 69);
 }
 
 * {
@@ -20,8 +21,8 @@
 
 body {
   background-color: var(--bg-light);
-  font-family: 'Playfair Display', Verdana, sans-serif;
-  font-family: 'Lato', Verdana, sans-serif;
+  font-family: "Playfair Display", Verdana, sans-serif;
+  font-family: "Lato", Verdana, sans-serif;
 }
 
 .btn {
@@ -41,10 +42,10 @@ body {
   box-shadow: 0 0 20px 0.8px rgba(0, 0, 0, 0.8);
 }
 
-.box-style{
+.box-style {
   width: 70vw;
   margin: 0.5rem 0;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   border: 2px solid var(--text-red);
   border-radius: 10px;
   box-shadow: 0 2px 8px 0.8px rgba(0, 0, 0, 0.8);
@@ -55,7 +56,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .main-container {
@@ -63,8 +64,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  padding: 1em;
+  /* width: 100%; */
+  /* padding: 1em; */
 }
 
 .main-heading {
@@ -72,15 +73,14 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1em;
+  padding: 0.8em;
   font-size: 1em;
-  text-shadow: 1px 1px 1px red;
+  text-shadow: 1px 1px 1px rgb(250, 181, 181);
 }
 
 .sub-heading {
   padding: 0.8em;
   font-size: 1em;
-  /* text-transform: capitalize; */
 }
 
 .box-container {
@@ -95,7 +95,7 @@ body {
   justify-content: center;
   width: 15vw;
   height: 15vh;
-  margin: 1em;
+  margin: 0.5em 1em;
   font-size: 1em;
   cursor: pointer;
   border: 2px solid var(--text-black);
@@ -121,6 +121,21 @@ body {
   background-color: var(--bg-water);
 }
 
+.winner-description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.winner-description-result {
+  color: var(--text-winner);
+  line-height: 25px;
+  /* text-shadow: 1px 1px 1px red; */
+}
+
 .show-container {
   display: flex;
   align-items: center;
@@ -131,7 +146,7 @@ body {
 
 .choice {
   padding: 5px 15px;
-  margin-left: .5em;
+  margin-left: 0.5em;
   border-radius: 8px;
   border: 2px solid var(--text-black);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
@@ -141,22 +156,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .8em;
+  margin: 0.8em;
 }
 
 .winner-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .8em;
-  
+  margin: 0.8em;
 }
 
 .score-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .8em;
+  margin: 0.8em;
 }
 
 .reload-btn {
@@ -164,7 +178,11 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-  .box-style{
+  .main-heading {
+    font-size: 0.8em;
+  }
+
+  .box-style {
     width: 95vw;
   }
 
@@ -178,19 +196,18 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
-  
   .box-contain {
-    margin: .2em .5em;
-    font-size: .8em;
+    margin: 0.2em 0.5em;
+    font-size: 0.8em;
   }
 
   .show-container {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .choice {
     padding: 5px 8px;
-    margin-left: .1em;
+    margin-left: 0.1em;
   }
 
   .input-box {
@@ -200,7 +217,7 @@ body {
   .winner-box {
     margin: 1em 0;
   }
-  
+
   .score-box {
     margin: 1em 0;
   }
