@@ -1,6 +1,6 @@
-# snake-gun-water
+# snake-gun-water-game
 
-***Snake Gun Water*** is one of the famous two-player game played by many people. 
+***Snake Gun Water Game*** is one of the famous two-player game played by many people. 
 <br />
 It is a hand game in which the player randomly chooses any of the three forms i.e. snake, water, and gun.
 <br />
